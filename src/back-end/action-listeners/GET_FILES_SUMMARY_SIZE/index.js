@@ -1,5 +1,5 @@
 const ACTIONS = require('../../../connector/actions');
-const axios = require('axios');
+const axios = require('../../request');
 
 const getFileSummarySize = async (event, fileList, serverMeta) => {
   event.sender.send(ACTIONS.GET_FILES_SUMMARY_SIZE, { action: 'started' });

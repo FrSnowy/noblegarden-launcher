@@ -1,5 +1,5 @@
 const ACTIONS = require('../../../connector/actions');
-const axios = require('axios');
+const axios = require('../../request');
 
 const getDiscordLink = async event => {
   event.sender.send(ACTIONS.GET_DISCORD_LINK, { action: 'started' });

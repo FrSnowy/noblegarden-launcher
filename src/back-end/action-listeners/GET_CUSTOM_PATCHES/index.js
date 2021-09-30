@@ -1,5 +1,5 @@
 const ACTIONS = require('../../../connector/actions');
-const axios = require('axios');
+const axios = require('../../request');
 
 const getCustomPatches = async event => {
   event.sender.send(ACTIONS.GET_CUSTOM_PATCHES, { action: 'started' });
